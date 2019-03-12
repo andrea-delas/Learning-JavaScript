@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
 	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+	<h2>Kalkulator</h2>
 	<form>
-		Value 1: <input type="text" id="value1"><br>
-		Value 2: <input type="text" id="value2"><br>
-		Operator:
-		<select id="operator">
+		<input type="text" id="value1" placeholder="Unesite prvu vrijednost"><br>
+		<input type="text" id="value2" placeholder="Unesite drugu vrijednost"><br>
+
+		<select id="operator" placeholder="Izaberite operaciju">
+			<!-- disabled selected - koristi se umjesto placeholdera za option - prikaze se kao jedna od opcija, ali ne može se odabrati -->
+			<option value="" disabled selected>Izaberite operaciju</option> 
 			<option value="add">Add</option>
 			<option value="min">Minus</option>
 			<option value="div">Divide</option>
 			<option value="mul">Multiply</option>
-		</select>
-		<button type="button" onclick="calc()">Calculate</button>
+		</select> <br>
+		<button type="button" onclick="calc()">Izračunaj</button>
 	</form>
 
 	<div id="result"></div>

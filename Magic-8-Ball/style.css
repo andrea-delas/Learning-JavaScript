@@ -1,0 +1,78 @@
+body {
+	text-align: center;
+	font-family: "Georgia", arial;
+	font-weight: 100;
+}
+
+h1 { 
+	font-weight: 100;
+	font-size: 75px;
+
+}
+p {
+	margin 0;
+	font-size: 45px;
+}
+div.ball {
+	background-color: black;
+	border-radius: 50%;
+	border: 1px solid black;
+	width: 300px;
+	height: 300px;
+	margin: 0 auto;
+}
+div.answer {
+	background-color: #333;
+	border: 1px solid #333;
+	border-radius: 50%;
+	width: 50%;
+	height: 50%;
+	margin: 25% auto;
+
+}
+
+
+#eight {
+	font-size: 5em;
+	margin: 20% auto;
+	color: white;
+}
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+
+  45% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0%;
+  }
+}
+#answer {
+	padding: 25px;
+	color: lightblue;
+	font-size: 20px;
+	letter-spacing: 1px;
+	opacity: 0;
+	animation-name: fadeInOut;
+	animation-delay: 1s;
+	animation-duration: 6s; 
+}
+button, input {
+	margin: 20px;
+	padding: 10px;
+	border: 1px solid black;
+	border-radius: 10px;
+	cursor: pointer;
+	font-size: 1.2em;
+	font-weight: 100;
+	letter-spacing: 1px;
+	transition: .5s font-size;
+}
+button-hover {
+	font-size: 1.4em;
+}
+
+

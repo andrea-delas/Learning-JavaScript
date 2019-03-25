@@ -74,5 +74,9 @@ button, input {
 button-hover {
 	font-size: 1.4em;
 }
+#button {
+	margin-top: 50px;
+	background-color: #FF3333;
+}
 
 
